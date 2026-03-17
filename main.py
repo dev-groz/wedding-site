@@ -11,6 +11,7 @@ app = FastAPI(
 async def home(request: Request):
     return FileResponse('templates/index.html')
 
+@app.head('/health')
 @app.get('/health')
 async def health():
     return {'status':'ok'}
