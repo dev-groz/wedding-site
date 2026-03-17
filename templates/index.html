@@ -1,9 +1,5 @@
 <!DOCTYPE html>
-<html lang=ru style><!--
- Page saved with SingleFile 
- url: https://56gsm4ycw9.wixsite.com/wedding-piskunovy 
- saved date: Tue Mar 17 2026 21:18:06 GMT+0700 (Новосибирск, стандартное время)
--->
+<html lang=ru style>
 <meta charset=utf-8>
 <meta name=viewport content="width=320, user-scalable=yes" id=wixMobileViewport>
 <meta http-equiv=X-UA-Compatible content="IE=edge">
@@ -249,11 +245,16 @@
         margin-left: auto;
         margin-right: auto;
         position: relative;
-        overflow-x: visible
+        overflow-x: visible;
+        padding-top: 0;
     }
 
     body.device-mobile-optimized:not(.responsive):not(.blockSiteScrolling) #SITE_CONTAINER {
-        margin-top: 0
+        margin-top: 0;
+    }
+
+    body.device-mobile-optimized #main_MF {
+        background-color: rgb(247, 249, 245);
     }
 
     body.device-mobile-optimized>* {
@@ -261,7 +262,8 @@
     }
 
     body.device-mobile-optimized #site-root {
-        overflow: hidden
+        overflow: hidden;
+        padding-top: 0;
     }
 
     @supports (overflow:clip) {
@@ -5390,7 +5392,6 @@
                                                                                                 id=input_comp-mmtbdij4
                                                                                                 class="KvoMHf has-custom-focus wixui-text-input__input"
                                                                                                 type=text
-                                                                                                placeholder="Add your name"
                                                                                                 required
                                                                                                 aria-invalid=false
                                                                                                 maxlength=100
@@ -5421,7 +5422,7 @@
                                                                                                 name=email
                                                                                                 id=input_comp-mmtbdijd2
                                                                                                 class="KvoMHf has-custom-focus wixui-text-input__input"
-                                                                                                type=email placeholder
+                                                                                                type=tel placeholder
                                                                                                 required
                                                                                                 aria-invalid=false
                                                                                                 maxlength=250
