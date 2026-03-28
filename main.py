@@ -17,8 +17,13 @@ async def home(request: Request):
 @app.get('/send_info')
 async def send_info(first_name: str, last_name: str, phone: str):
     write_to_sheet(first_name, last_name, phone)
-    return RedirectResponse('/')
+    return RedirectResponse('/greetings')
 
+
+@app.get('/greetings')
+async def greetings():
+    return FileResponse('templates/greetings.html')
+    
 
 @app.head('/health')
 @app.get('/health')
